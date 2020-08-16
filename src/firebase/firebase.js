@@ -23,14 +23,19 @@ const config = {
         city: 'Austin',
         country: 'United States'
     }
-  });
+  }).then(() => {
+    console.log('Data is saved');
+  }).catch((e) => {
+    console.log('This failed', e);
+  })
 
-//   database.ref().set('This is my data');
+// DELETION
+// database.ref('isSingle')
+// .remove()
+// .then(() => {
+//   console.log('Did remove data')
+// }).catch((e) => {
+//   console.log('Did not remove data', e)
+// });
 
-database.ref('age').set(27);
-database.ref('location/city').set('New York');
-
-database.ref('attributes').set({
-    height: 73,
-    weight: 175
-});
+database.ref('isSingle').set(null);
