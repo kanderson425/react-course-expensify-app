@@ -18,15 +18,19 @@ const config = {
   database.ref().set({
     name: 'Kyle Anderson',
     age: 25,
-    isSingle: false,
+    stressLevel:  6,
+    job: {
+      title: 'Software Developer',
+      company: 'Google'
+    },
     location: {
         city: 'Austin',
         country: 'United States'
     }
   }).then(() => {
-    console.log('Data is saved');
+    console.log('Data is saved!');
   }).catch((e) => {
-    console.log('This failed', e);
+    console.log('This failed!', e);
   })
 
 // DELETION
@@ -38,4 +42,10 @@ const config = {
 //   console.log('Did not remove data', e)
 // });
 
-database.ref('isSingle').set(null);
+// UPDATE
+database.ref().update({
+  stressLevel: 9,
+  'job/company': 'Amazon',
+  'location/city': 'Seattle'
+});
+
