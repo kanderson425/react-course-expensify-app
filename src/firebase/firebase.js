@@ -15,6 +15,30 @@ const config = {
 
   const database = firebase.database();
 
+  database.ref('notes/-MEwUmHiGWKTz8w5p6FR').remove();
+
+  database.ref('expenses').push({
+    description: 'Rent',
+    note: 'Expense 1 note',
+    amount: 109500,
+    createdAt: 1230871209387120938
+  });
+
+  database.ref('expenses').push({
+    description: 'Phone Bill',
+    note: 'phone bill note',
+    amount: 200,
+    createdAt: 99812838123012
+  });
+
+  database.ref('expenses').push({
+    description: 'food',
+    note: 'food note',
+    amount: 1200,
+    createdAt: 123987123987123
+  });
+
+
 // FETCHING DATA
 // database.ref('location/city')
 // .once('value')
@@ -25,20 +49,7 @@ const config = {
 //   console.lot('Error fetching data', e);
 // });
 
-database.ref().on('value', (snapshot) => {
-  const val = snapshot.val();
-  console.log(`${val.name} is a ${val.job.title} at ${val.job.company}`);
-}, (e) => {
-  console.log('Error with data fetching', e);
-});
 
-setTimeout(() => {
-  database.ref('name').set('Curtis');
-}, 2000);
-
-setTimeout(() => {
-  database.ref('age').set(57);
-}, 4000);
 
   // database.ref().set({
   //   name: 'Kyle Anderson',
