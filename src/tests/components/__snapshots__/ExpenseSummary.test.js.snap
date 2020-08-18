@@ -7,7 +7,7 @@ exports[`should ccorrectly render ExpenseSummaray with 1 expense 1`] = `
     1
      
     expense
-     totallingg 
+     totalling 
     $2.35
   </h1>
 </div>
@@ -20,7 +20,7 @@ exports[`should ccorrectly render ExpenseSummaray with multiple expenses 1`] = `
     23
      
     expenses
-     totallingg 
+     totalling 
     $235,123,421.34
   </h1>
 </div>
