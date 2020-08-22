@@ -97,6 +97,7 @@ exports[`should render ExpenseForm correctly 1`] = `
     <textarea
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
+      value=""
     />
     <button>
       Add Expense
@@ -202,6 +203,7 @@ exports[`should render ExpenseForm with expense data 1`] = `
     <textarea
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
+      value=""
     />
     <button>
       Add Expense
@@ -307,6 +309,7 @@ exports[`should render error for invalid form submission 1`] = `
     <textarea
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
+      value=""
     />
     <button>
       Add Expense
@@ -415,6 +418,7 @@ exports[`should render error for invalid form submission 2`] = `
     <textarea
       onChange={[Function]}
       placeholder="Add a note for your expense (optional)"
+      value=""
     />
     <button>
       Add Expense
