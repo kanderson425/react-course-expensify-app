@@ -5,5 +5,12 @@
     font-weight: 300;
     font-size: $font-size-large;
     color: white;
+    display: inline-block;
     background: $blue;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.button--link {
+    background: none;
 }
